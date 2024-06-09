@@ -1,0 +1,157 @@
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-size: 120rem;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.all {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.image img {
+    width: 50vw;
+    margin-left: -13rem;
+    margin-top: 120px;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.content {
+    color: white;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: -150px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content h1 {
+    font-size: 3rem;
+    width: 600px;
+    font-weight: 550;
+}
+
+.content p {
+    font-size: 1.1rem;
+    width: 500px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    width: 200px;
+    padding: 17px;
+    box-shadow: 0 0 7px 1px yellow;
+    border-radius: 30px;
+    color: hsl(257, 40%, 49%);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: 0.3s
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: -70px;
+}
+.social-media a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.fa:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-right: 20px;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+       background-image: url(/images/bg-mobile.svg);
+       background-size: 740px;
+       background-repeat: no-repeat;
+    }
+    .all {
+        flex-direction: column;
+        margin-left: 250px;
+    }
+    .image img {
+        width: 80vw;
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+    .content {
+        margin-top: 50px;
+        text-align: center;
+        margin-right: 250px;
+    }
+    .content p {
+        text-align: center;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    button {
+        margin-left: -127px;
+        width: 20rem;
+    }
+    .social-media {
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 25px;
+    }
+    .social-media a {
+        padding: 15px;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+}
